@@ -1,7 +1,17 @@
 # URLGenerator
-Use this generator to create clickable links with your predefined message.
-Anyone using the link instantly has an open messenger in a chat with you and the defined message.
+Create clickable messenger links with a predefined message and a QR code.
 
-Actually simple URL generator, though my first really self made program.
-Though the idea helped my wife and some others a lot already.
-Anyways, I'm glad if you help me improve coding as well as getting along on github!
+## Run locally
+
+Install the dependencies and start the Streamlit app:
+
+```bash
+pip install -r requirements.txt
+streamlit run main.py
+```
+
+## Publish with Streamlit Community Cloud
+
+Push this repository to GitHub, then create an app in Streamlit Community Cloud. Select this repository and branch, and set `main.py` as the app's main file. Streamlit installs the packages listed in `requirements.txt` during deployment.
+
+Threema and WhatsApp links include the message text. Signal links open the chat but do not prefill the message.
