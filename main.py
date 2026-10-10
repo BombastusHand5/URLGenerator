@@ -1,3 +1,7 @@
+# Author
+#Created by BombastusHand5
+#Copyright © 2026 BombastusHand5
+
 from io import BytesIO
 from urllib.parse import quote
 
@@ -5,9 +9,10 @@ import qrcode
 import streamlit as st
 
 
-st.set_page_config(page_title="Click Message", page_icon="🔗")
+st.set_page_config(page_title="Click Message")
 st.title("Click Message")
 st.write("Create a link that opens a messenger chat with your message.")
+st.write("Created by BombastusHand5")
 
 messenger = st.radio(
     "Choose messenger",
